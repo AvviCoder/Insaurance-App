@@ -1,0 +1,93 @@
+/* Main container styling */
+.home-container {
+  text-align: center;
+  margin-top: 50px;
+  padding: 100px 0;
+  background-image: url('../assets/Insurance2.webp'); 
+  background-size: cover; /* Ensure the background covers the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensure full viewport height */
+  color: white; /* Contrast text color */
+
+}
+
+/* Title styling */
+.home-container h1 {
+  font-size: 55px;
+  margin-bottom: 30px;
+  color: aqua;
+}
+
+/* Paragraph styling */
+.home-container p {
+  font-size: 30px;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+/* Button styling */
+.home-links .btn {
+  margin: 10px;
+  padding: 13px 23px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 150px;
+  background-image: linear-gradient(135deg, orange, black); /* Gradient background */
+  transition: 0.5s all;
+  font-size: 23px;
+}
+
+/* Button hover effect */
+.home-links .btn:hover {
+  /* background-color: rgba(0, 86, 179, 0.8); */
+  transform: scale(1.03); /* Slight scaling effect */
+}
+
+/* Cartoon floating animation */
+.cartoon {
+  position: fixed;
+  bottom: 5%;
+  left: 0;
+  width: 170px;
+  height: auto;
+  animation: float 3s ease-in-out infinite; /* Infinite up-down motion */
+}
+
+/* Keyframes for floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0); /* At the start and end, position remains unchanged */
+  }
+  50% {
+    transform: translateY(-20px); /* Move up 20px in the middle of the animation */
+  }
+}
+
+/* Dialogue box styling */
+.dialogue-box {
+  position: fixed;
+  bottom: 45%;
+  left: 100px; /* Adjusted to be beside the cartoon */
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: black;
+  font-size: 16px;
+  animation: float 3s ease-in-out infinite; /* Sync the movement with the cartoon */
+}
+
+.dialogue-box:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid white; /* Creates the speech bubble arrow */
+  transform: translateY(-50%);
+}

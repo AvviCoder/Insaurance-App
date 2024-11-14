@@ -1,0 +1,150 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Soft background color */
+    background: linear-gradient(135deg, #d8d4c5 0%, #d7b6ad 100%);
+
+  }
+  
+  /* Style for the main dashboard container */
+  .dashboard-container {
+    display: flex;
+    padding-top: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 45vh; /* Center vertically and horizontally */
+    background-color: #ffffff; /* White background for the dashboard */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+    margin: 20px auto; /* Ensure the container is centered on the page */
+    max-width: 800px;
+    margin-bottom: 100px;
+  }
+  
+  /* Style for the dashboard heading */
+  .dashboard-heading {
+    padding-top: 100px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Dark blue-gray color for heading */
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-align: center;
+  }
+  
+  /* Style for the KYC status message */
+  .accepted-status {
+    color: #28a745; /* Green color for accepted status */
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  
+  .rejected-status {
+    color: #e74c3c; /* Red color for rejected status */
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  
+  /* General styling for status if it's neither accepted nor rejected */
+  .dashboard-container p {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+    text-align: center;
+  }
+  
+  .dashboard-container p:hover {
+    color: #2c3e50; /* Darker color on hover */
+  }
+  
+  /* Style for the document upload links */
+  .document-link {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 15px;
+    background-color: #3498db; /* Bright blue color */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for button */
+    background-image: linear-gradient(135deg, orange, black);
+
+  }
+  
+  .document-link:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  /* Container for additional document upload instructions */
+  .additional-doc-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ecf0f1; /* Light gray background for section */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .additional-doc-container:hover {
+    background-color: #e2e6ea; /* Slight color change on hover */
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    width: 100%;
+    background-color: #2c3e50; /* Dark blue-gray for navbar */
+    padding: 10px 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .dashboard-heading {
+      font-size: 2rem;
+    }
+  
+    .dashboard-container p {
+      font-size: 1.2rem;
+    }
+  
+    .document-link {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .additional-doc-container p {
+      font-size: 1.2rem;
+    }
+  }
+  

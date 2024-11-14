@@ -1,0 +1,129 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Light gray background for the page */
+    background: linear-gradient(135deg, #d8d4c5 0%, #d7b6ad 100%);
+
+  }
+  
+  .heading{
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 120px;
+  }
+  /* Main container for the document upload form */
+  .document-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Full viewport height */
+    padding: 40px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 20px auto; /* Center the container */
+    max-width: 500px; /* Limit max width */
+    margin-bottom: 100px;
+  }
+  
+  /* Heading styling */
+  .document-upload-container h2 {
+    font-size: 2rem;
+    color: #333; /* Dark gray color */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form styling */
+  form {
+    width: 100%; /* Full width for the form */
+  }
+  
+  /* Label styling */
+  label {
+    font-size: 1.2rem;
+    color: #555; /* Medium gray color */
+    margin-bottom: 10px;
+    display: block; /* Make label block level */
+  }
+  
+  /* Select input styling */
+  select {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 20px; /* Space below the select */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  select:focus {
+    border-color: #007bff; /* Change border color on focus */
+  }
+  
+  /* File input styling */
+  input[type='file'] {
+    display: block; /* Make input block level */
+    margin: 20px 0; /* Space above and below the input */
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-image: linear-gradient(135deg, orange, black);
+
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom-in effect */
+  }
+  
+  /* Message styling */
+  .message {
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Styling for error/success messages */
+  .message.error {
+    color: #e74c3c; /* Red color for error messages */
+  }
+  
+  .message.success {
+    color: #28a745; /* Green color for success messages */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .document-upload-container {
+      padding: 20px;
+    }
+  
+    .document-upload-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    label {
+      font-size: 1rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+    }
+  }
+  

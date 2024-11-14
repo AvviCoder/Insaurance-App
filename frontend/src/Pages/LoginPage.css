@@ -1,0 +1,114 @@
+/* Global page container */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); */
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #d8d4c5 0%, #d7b6ad 100%);
+
+}
+
+/* Form container */
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading style */
+.heading {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Input label style */
+.label {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+/* Input field style */
+.input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input field hover and focus effects */
+.input:focus {
+    border-color: #76b3e9;
+    box-shadow: 0 0 5px rgba(118, 179, 233, 0.5);
+}
+
+/* Submit button style */
+.button {
+    width: 100%;
+    padding: 12px;
+    background-image: linear-gradient(135deg, orange, black);
+
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+/* Button hover and active effects */
+.button:hover {
+    background-color: #549ed8;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* Navbar (Optional if you're using the Navbar component) */
+.navbar {
+    width: 100%;
+    padding: 20px;
+    background-color: #76b3e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
